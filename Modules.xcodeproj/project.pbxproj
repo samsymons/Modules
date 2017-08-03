@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		59484C751F33A5EE00381B6A /* StaticLibraryModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 59484C741F33A5EE00381B6A /* StaticLibraryModule.m */; };
-		59484C761F33A5EE00381B6A /* StaticLibraryModule.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 59484C731F33A5EE00381B6A /* StaticLibraryModule.h */; };
 		59484C831F33A5F700381B6A /* FrameworkModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 59484C811F33A5F700381B6A /* FrameworkModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		59484C891F33A76500381B6A /* SomeFrameworkClass.h in Headers */ = {isa = PBXBuildFile; fileRef = 59484C871F33A76500381B6A /* SomeFrameworkClass.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		59484C8A1F33A76500381B6A /* SomeFrameworkClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 59484C881F33A76500381B6A /* SomeFrameworkClass.m */; };
@@ -18,6 +16,15 @@
 		59484C991F33A88000381B6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59484C981F33A88000381B6A /* Assets.xcassets */; };
 		59484C9C1F33A88000381B6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59484C9A1F33A88000381B6A /* LaunchScreen.storyboard */; };
 		59484CA31F33A89300381B6A /* FrameworkModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59484C7F1F33A5F700381B6A /* FrameworkModule.framework */; };
+		59484CAB1F33AE5800381B6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59484CAA1F33AE5800381B6A /* AppDelegate.swift */; };
+		59484CAD1F33AE5800381B6A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59484CAC1F33AE5800381B6A /* ViewController.swift */; };
+		59484CB01F33AE5800381B6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59484CAE1F33AE5800381B6A /* Main.storyboard */; };
+		59484CB21F33AE5800381B6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59484CB11F33AE5800381B6A /* Assets.xcassets */; };
+		59484CB51F33AE5800381B6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59484CB31F33AE5800381B6A /* LaunchScreen.storyboard */; };
+		59484CBC1F33AE7200381B6A /* libStaticLibraryModule.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 59484C711F33A5EE00381B6A /* libStaticLibraryModule.a */; };
+		59484CBF1F33AFAF00381B6A /* SomeStaticLibraryClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 59484CBE1F33AFAF00381B6A /* SomeStaticLibraryClass.m */; };
+		59484CC21F33B02B00381B6A /* module.modulemap in CopyFiles */ = {isa = PBXBuildFile; fileRef = 59484CC11F33B02200381B6A /* module.modulemap */; };
+		59484CC31F33B07400381B6A /* SomeStaticLibraryClass.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 59484CBD1F33AFAF00381B6A /* SomeStaticLibraryClass.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +35,13 @@
 			remoteGlobalIDString = 59484C7E1F33A5F700381B6A;
 			remoteInfo = FrameworkModule;
 		};
+		59484CBA1F33AE6E00381B6A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 59484C591F33A5DA00381B6A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 59484C701F33A5EE00381B6A;
+			remoteInfo = StaticLibraryModule;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,7 +51,8 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				59484C761F33A5EE00381B6A /* StaticLibraryModule.h in CopyFiles */,
+				59484CC31F33B07400381B6A /* SomeStaticLibraryClass.h in CopyFiles */,
+				59484CC21F33B02B00381B6A /* module.modulemap in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,8 +60,6 @@
 
 /* Begin PBXFileReference section */
 		59484C711F33A5EE00381B6A /* libStaticLibraryModule.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libStaticLibraryModule.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		59484C731F33A5EE00381B6A /* StaticLibraryModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StaticLibraryModule.h; sourceTree = "<group>"; };
-		59484C741F33A5EE00381B6A /* StaticLibraryModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StaticLibraryModule.m; sourceTree = "<group>"; };
 		59484C7F1F33A5F700381B6A /* FrameworkModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FrameworkModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		59484C811F33A5F700381B6A /* FrameworkModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FrameworkModule.h; sourceTree = "<group>"; };
 		59484C821F33A5F700381B6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -59,6 +72,16 @@
 		59484C981F33A88000381B6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		59484C9B1F33A88000381B6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		59484C9D1F33A88000381B6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59484CA81F33AE5800381B6A /* StaticLibraryModuleConsumer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StaticLibraryModuleConsumer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		59484CAA1F33AE5800381B6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		59484CAC1F33AE5800381B6A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		59484CAF1F33AE5800381B6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		59484CB11F33AE5800381B6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		59484CB41F33AE5800381B6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		59484CB61F33AE5800381B6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59484CBD1F33AFAF00381B6A /* SomeStaticLibraryClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SomeStaticLibraryClass.h; sourceTree = "<group>"; };
+		59484CBE1F33AFAF00381B6A /* SomeStaticLibraryClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SomeStaticLibraryClass.m; sourceTree = "<group>"; };
+		59484CC11F33B02200381B6A /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +107,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		59484CA51F33AE5800381B6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59484CBC1F33AE7200381B6A /* libStaticLibraryModule.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -91,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				59484C721F33A5EE00381B6A /* StaticLibraryModule */,
+				59484CA91F33AE5800381B6A /* StaticLibraryModuleConsumer */,
 				59484C801F33A5F700381B6A /* FrameworkModule */,
 				59484C901F33A88000381B6A /* FrameworkModuleConsumer */,
 				59484C631F33A5DA00381B6A /* Products */,
@@ -103,6 +135,7 @@
 				59484C711F33A5EE00381B6A /* libStaticLibraryModule.a */,
 				59484C7F1F33A5F700381B6A /* FrameworkModule.framework */,
 				59484C8F1F33A88000381B6A /* FrameworkModuleConsumer.app */,
+				59484CA81F33AE5800381B6A /* StaticLibraryModuleConsumer.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -110,8 +143,9 @@
 		59484C721F33A5EE00381B6A /* StaticLibraryModule */ = {
 			isa = PBXGroup;
 			children = (
-				59484C731F33A5EE00381B6A /* StaticLibraryModule.h */,
-				59484C741F33A5EE00381B6A /* StaticLibraryModule.m */,
+				59484CBD1F33AFAF00381B6A /* SomeStaticLibraryClass.h */,
+				59484CBE1F33AFAF00381B6A /* SomeStaticLibraryClass.m */,
+				59484CC11F33B02200381B6A /* module.modulemap */,
 			);
 			path = StaticLibraryModule;
 			sourceTree = "<group>";
@@ -138,6 +172,19 @@
 				59484C9D1F33A88000381B6A /* Info.plist */,
 			);
 			path = FrameworkModuleConsumer;
+			sourceTree = "<group>";
+		};
+		59484CA91F33AE5800381B6A /* StaticLibraryModuleConsumer */ = {
+			isa = PBXGroup;
+			children = (
+				59484CAA1F33AE5800381B6A /* AppDelegate.swift */,
+				59484CAC1F33AE5800381B6A /* ViewController.swift */,
+				59484CAE1F33AE5800381B6A /* Main.storyboard */,
+				59484CB11F33AE5800381B6A /* Assets.xcassets */,
+				59484CB31F33AE5800381B6A /* LaunchScreen.storyboard */,
+				59484CB61F33AE5800381B6A /* Info.plist */,
+			);
+			path = StaticLibraryModuleConsumer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,6 +255,24 @@
 			productReference = 59484C8F1F33A88000381B6A /* FrameworkModuleConsumer.app */;
 			productType = "com.apple.product-type.application";
 		};
+		59484CA71F33AE5800381B6A /* StaticLibraryModuleConsumer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59484CB71F33AE5800381B6A /* Build configuration list for PBXNativeTarget "StaticLibraryModuleConsumer" */;
+			buildPhases = (
+				59484CA41F33AE5800381B6A /* Sources */,
+				59484CA51F33AE5800381B6A /* Frameworks */,
+				59484CA61F33AE5800381B6A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				59484CBB1F33AE6E00381B6A /* PBXTargetDependency */,
+			);
+			name = StaticLibraryModuleConsumer;
+			productName = StaticLibraryModuleConsumer;
+			productReference = 59484CA81F33AE5800381B6A /* StaticLibraryModuleConsumer.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -226,6 +291,11 @@
 					};
 					59484C8E1F33A88000381B6A = {
 						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Manual;
+					};
+					59484CA71F33AE5800381B6A = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -243,6 +313,7 @@
 			projectRoot = "";
 			targets = (
 				59484C701F33A5EE00381B6A /* StaticLibraryModule */,
+				59484CA71F33AE5800381B6A /* StaticLibraryModuleConsumer */,
 				59484C7E1F33A5F700381B6A /* FrameworkModule */,
 				59484C8E1F33A88000381B6A /* FrameworkModuleConsumer */,
 			);
@@ -267,6 +338,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		59484CA61F33AE5800381B6A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59484CB51F33AE5800381B6A /* LaunchScreen.storyboard in Resources */,
+				59484CB21F33AE5800381B6A /* Assets.xcassets in Resources */,
+				59484CB01F33AE5800381B6A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -274,7 +355,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59484C751F33A5EE00381B6A /* StaticLibraryModule.m in Sources */,
+				59484CBF1F33AFAF00381B6A /* SomeStaticLibraryClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +376,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		59484CA41F33AE5800381B6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59484CAD1F33AE5800381B6A /* ViewController.swift in Sources */,
+				59484CAB1F33AE5800381B6A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -302,6 +392,11 @@
 			isa = PBXTargetDependency;
 			target = 59484C7E1F33A5F700381B6A /* FrameworkModule */;
 			targetProxy = 59484CA11F33A88E00381B6A /* PBXContainerItemProxy */;
+		};
+		59484CBB1F33AE6E00381B6A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 59484C701F33A5EE00381B6A /* StaticLibraryModule */;
+			targetProxy = 59484CBA1F33AE6E00381B6A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -318,6 +413,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				59484C9B1F33A88000381B6A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		59484CAE1F33AE5800381B6A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				59484CAF1F33AE5800381B6A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		59484CB31F33AE5800381B6A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				59484CB41F33AE5800381B6A /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -429,6 +540,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -438,6 +550,8 @@
 		59484C781F33A5EE00381B6A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEFINES_MODULE = YES;
+				MODULEMAP_FILE = "$(SRCROOT)/StaticLibraryModule/module.modulemap";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -448,6 +562,8 @@
 		59484C791F33A5EE00381B6A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEFINES_MODULE = YES;
+				MODULEMAP_FILE = "$(SRCROOT)/StaticLibraryModule/module.modulemap";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -495,10 +611,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = FrameworkModuleConsumer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.samsymons.FrameworkModuleConsumer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
@@ -510,10 +628,45 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = FrameworkModuleConsumer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.samsymons.FrameworkModuleConsumer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		59484CB81F33AE5800381B6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = StaticLibraryModuleConsumer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.samsymons.StaticLibraryModuleConsumer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		59484CB91F33AE5800381B6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = StaticLibraryModuleConsumer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.samsymons.StaticLibraryModuleConsumer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -555,6 +708,15 @@
 			buildConfigurations = (
 				59484C9F1F33A88000381B6A /* Debug */,
 				59484CA01F33A88000381B6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59484CB71F33AE5800381B6A /* Build configuration list for PBXNativeTarget "StaticLibraryModuleConsumer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59484CB81F33AE5800381B6A /* Debug */,
+				59484CB91F33AE5800381B6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

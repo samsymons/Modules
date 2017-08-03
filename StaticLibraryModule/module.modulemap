@@ -1,0 +1,4 @@
+module StaticLibraryModule {
+  header "SomeStaticLibraryClass.h"
+  export *
+}

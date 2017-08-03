@@ -1,13 +1,15 @@
 //
-//  StaticLibraryModule.m
+//  SomeStaticLibraryClass.h
 //  StaticLibraryModule
 //
 //  Created by Sam Symons on 3/08/17.
 //  Copyright © 2017 Sam Symons. All rights reserved.
 //
 
-#import "StaticLibraryModule.h"
+#import <Foundation/Foundation.h>
 
-@implementation StaticLibraryModule
+@interface SomeStaticLibraryClass : NSObject
+
+- (void)someMethod;
 
 @end
