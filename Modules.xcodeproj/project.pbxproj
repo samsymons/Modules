@@ -10,7 +10,25 @@
 		59484C751F33A5EE00381B6A /* StaticLibraryModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 59484C741F33A5EE00381B6A /* StaticLibraryModule.m */; };
 		59484C761F33A5EE00381B6A /* StaticLibraryModule.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 59484C731F33A5EE00381B6A /* StaticLibraryModule.h */; };
 		59484C831F33A5F700381B6A /* FrameworkModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 59484C811F33A5F700381B6A /* FrameworkModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		59484C891F33A76500381B6A /* SomeFrameworkClass.h in Headers */ = {isa = PBXBuildFile; fileRef = 59484C871F33A76500381B6A /* SomeFrameworkClass.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		59484C8A1F33A76500381B6A /* SomeFrameworkClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 59484C881F33A76500381B6A /* SomeFrameworkClass.m */; };
+		59484C921F33A88000381B6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59484C911F33A88000381B6A /* AppDelegate.swift */; };
+		59484C941F33A88000381B6A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59484C931F33A88000381B6A /* ViewController.swift */; };
+		59484C971F33A88000381B6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59484C951F33A88000381B6A /* Main.storyboard */; };
+		59484C991F33A88000381B6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59484C981F33A88000381B6A /* Assets.xcassets */; };
+		59484C9C1F33A88000381B6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59484C9A1F33A88000381B6A /* LaunchScreen.storyboard */; };
+		59484CA31F33A89300381B6A /* FrameworkModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59484C7F1F33A5F700381B6A /* FrameworkModule.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		59484CA11F33A88E00381B6A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 59484C591F33A5DA00381B6A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 59484C7E1F33A5F700381B6A;
+			remoteInfo = FrameworkModule;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		59484C6F1F33A5EE00381B6A /* CopyFiles */ = {
@@ -32,6 +50,15 @@
 		59484C7F1F33A5F700381B6A /* FrameworkModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FrameworkModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		59484C811F33A5F700381B6A /* FrameworkModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FrameworkModule.h; sourceTree = "<group>"; };
 		59484C821F33A5F700381B6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59484C871F33A76500381B6A /* SomeFrameworkClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SomeFrameworkClass.h; sourceTree = "<group>"; };
+		59484C881F33A76500381B6A /* SomeFrameworkClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SomeFrameworkClass.m; sourceTree = "<group>"; };
+		59484C8F1F33A88000381B6A /* FrameworkModuleConsumer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FrameworkModuleConsumer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		59484C911F33A88000381B6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		59484C931F33A88000381B6A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		59484C961F33A88000381B6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		59484C981F33A88000381B6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		59484C9B1F33A88000381B6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		59484C9D1F33A88000381B6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +76,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		59484C8C1F33A88000381B6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59484CA31F33A89300381B6A /* FrameworkModule.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -57,6 +92,7 @@
 			children = (
 				59484C721F33A5EE00381B6A /* StaticLibraryModule */,
 				59484C801F33A5F700381B6A /* FrameworkModule */,
+				59484C901F33A88000381B6A /* FrameworkModuleConsumer */,
 				59484C631F33A5DA00381B6A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -66,6 +102,7 @@
 			children = (
 				59484C711F33A5EE00381B6A /* libStaticLibraryModule.a */,
 				59484C7F1F33A5F700381B6A /* FrameworkModule.framework */,
+				59484C8F1F33A88000381B6A /* FrameworkModuleConsumer.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,8 +121,23 @@
 			children = (
 				59484C811F33A5F700381B6A /* FrameworkModule.h */,
 				59484C821F33A5F700381B6A /* Info.plist */,
+				59484C871F33A76500381B6A /* SomeFrameworkClass.h */,
+				59484C881F33A76500381B6A /* SomeFrameworkClass.m */,
 			);
 			path = FrameworkModule;
+			sourceTree = "<group>";
+		};
+		59484C901F33A88000381B6A /* FrameworkModuleConsumer */ = {
+			isa = PBXGroup;
+			children = (
+				59484C911F33A88000381B6A /* AppDelegate.swift */,
+				59484C931F33A88000381B6A /* ViewController.swift */,
+				59484C951F33A88000381B6A /* Main.storyboard */,
+				59484C981F33A88000381B6A /* Assets.xcassets */,
+				59484C9A1F33A88000381B6A /* LaunchScreen.storyboard */,
+				59484C9D1F33A88000381B6A /* Info.plist */,
+			);
+			path = FrameworkModuleConsumer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,6 +147,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59484C891F33A76500381B6A /* SomeFrameworkClass.h in Headers */,
 				59484C831F33A5F700381B6A /* FrameworkModule.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,12 +190,31 @@
 			productReference = 59484C7F1F33A5F700381B6A /* FrameworkModule.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		59484C8E1F33A88000381B6A /* FrameworkModuleConsumer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59484C9E1F33A88000381B6A /* Build configuration list for PBXNativeTarget "FrameworkModuleConsumer" */;
+			buildPhases = (
+				59484C8B1F33A88000381B6A /* Sources */,
+				59484C8C1F33A88000381B6A /* Frameworks */,
+				59484C8D1F33A88000381B6A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				59484CA21F33A88E00381B6A /* PBXTargetDependency */,
+			);
+			name = FrameworkModuleConsumer;
+			productName = FrameworkModuleConsumer;
+			productReference = 59484C8F1F33A88000381B6A /* FrameworkModuleConsumer.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		59484C591F33A5DA00381B6A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0900;
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Sam Symons";
 				TargetAttributes = {
@@ -150,6 +222,9 @@
 						CreatedOnToolsVersion = 9.0;
 					};
 					59484C7E1F33A5F700381B6A = {
+						CreatedOnToolsVersion = 9.0;
+					};
+					59484C8E1F33A88000381B6A = {
 						CreatedOnToolsVersion = 9.0;
 					};
 				};
@@ -160,6 +235,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 59484C581F33A5DA00381B6A;
 			productRefGroup = 59484C631F33A5DA00381B6A /* Products */;
@@ -168,6 +244,7 @@
 			targets = (
 				59484C701F33A5EE00381B6A /* StaticLibraryModule */,
 				59484C7E1F33A5F700381B6A /* FrameworkModule */,
+				59484C8E1F33A88000381B6A /* FrameworkModuleConsumer */,
 			);
 		};
 /* End PBXProject section */
@@ -177,6 +254,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59484C8D1F33A88000381B6A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59484C9C1F33A88000381B6A /* LaunchScreen.storyboard in Resources */,
+				59484C991F33A88000381B6A /* Assets.xcassets in Resources */,
+				59484C971F33A88000381B6A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,10 +282,47 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59484C8A1F33A76500381B6A /* SomeFrameworkClass.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59484C8B1F33A88000381B6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59484C941F33A88000381B6A /* ViewController.swift in Sources */,
+				59484C921F33A88000381B6A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		59484CA21F33A88E00381B6A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 59484C7E1F33A5F700381B6A /* FrameworkModule */;
+			targetProxy = 59484CA11F33A88E00381B6A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		59484C951F33A88000381B6A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				59484C961F33A88000381B6A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		59484C9A1F33A88000381B6A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				59484C9B1F33A88000381B6A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		59484C681F33A5DA00381B6A /* Debug */ = {
@@ -367,6 +491,35 @@
 			};
 			name = Release;
 		};
+		59484C9F1F33A88000381B6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FrameworkModuleConsumer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.samsymons.FrameworkModuleConsumer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		59484CA01F33A88000381B6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FrameworkModuleConsumer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.samsymons.FrameworkModuleConsumer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -393,6 +546,15 @@
 			buildConfigurations = (
 				59484C851F33A5F700381B6A /* Debug */,
 				59484C861F33A5F700381B6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59484C9E1F33A88000381B6A /* Build configuration list for PBXNativeTarget "FrameworkModuleConsumer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59484C9F1F33A88000381B6A /* Debug */,
+				59484CA01F33A88000381B6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
