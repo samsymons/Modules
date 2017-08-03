@@ -13,7 +13,10 @@ class ViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
 
-    let someClass = SomeStaticLibraryClass()
-    someClass.someMethod()
+    let model = StaticLibraryModelClass()
+    model.someModelObjectMethod()
+
+    let networking = StaticLibraryNetworkingClass()
+    networking.someNetworkingObjectMethod()
   }
 }

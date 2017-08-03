@@ -6,12 +6,12 @@
 //  Copyright © 2017 Sam Symons. All rights reserved.
 //
 
-#import "SomeStaticLibraryClass.h"
+#import "StaticLibraryModelClass.h"
 
-@implementation SomeStaticLibraryClass
+@implementation StaticLibraryModelClass
 
-- (void)someMethod {
-  NSLog(@"Hello from a static library module!");
+- (void)someModelObjectMethod {
+  NSLog(@"Hello from the static library model class!");
 }
 
 @end

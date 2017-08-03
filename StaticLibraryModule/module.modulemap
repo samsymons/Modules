@@ -1,4 +1,17 @@
 module StaticLibraryModule {
-  header "SomeStaticLibraryClass.h"
+  umbrella header "StaticLibraryModule.h"
   export *
+
+  // Define a Model module, which include an example model object class.
+  explicit module Model {
+    header "StaticLibraryModelClass.h"
+  }
+
+  // Define a Networking module, which include an example networking object class.
+  // This exports the Model module, meaning that importing the Networking module
+  // will implicitly import the Model module along with it.
+  explicit module Networking {
+    header "StaticLibraryNetworkingClass.h"
+    export Model
+  }
 }

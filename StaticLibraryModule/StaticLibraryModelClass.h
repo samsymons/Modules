@@ -8,8 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface SomeStaticLibraryClass : NSObject
+@interface StaticLibraryModelClass : NSObject
 
-- (void)someMethod;
+- (void)someModelObjectMethod;
 
 @end

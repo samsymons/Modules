@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		592162B41F33BF5E006BF5C2 /* StaticLibraryNetworkingClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 592162B31F33BF5E006BF5C2 /* StaticLibraryNetworkingClass.m */; };
+		592162B51F33C0DC006BF5C2 /* StaticLibraryNetworkingClass.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 592162B21F33BF5E006BF5C2 /* StaticLibraryNetworkingClass.h */; };
+		592162B71F33CE65006BF5C2 /* StaticLibraryModule.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 592162B61F33CE5A006BF5C2 /* StaticLibraryModule.h */; };
 		59484C831F33A5F700381B6A /* FrameworkModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 59484C811F33A5F700381B6A /* FrameworkModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		59484C891F33A76500381B6A /* SomeFrameworkClass.h in Headers */ = {isa = PBXBuildFile; fileRef = 59484C871F33A76500381B6A /* SomeFrameworkClass.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		59484C8A1F33A76500381B6A /* SomeFrameworkClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 59484C881F33A76500381B6A /* SomeFrameworkClass.m */; };
@@ -22,9 +25,9 @@
 		59484CB21F33AE5800381B6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59484CB11F33AE5800381B6A /* Assets.xcassets */; };
 		59484CB51F33AE5800381B6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59484CB31F33AE5800381B6A /* LaunchScreen.storyboard */; };
 		59484CBC1F33AE7200381B6A /* libStaticLibraryModule.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 59484C711F33A5EE00381B6A /* libStaticLibraryModule.a */; };
-		59484CBF1F33AFAF00381B6A /* SomeStaticLibraryClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 59484CBE1F33AFAF00381B6A /* SomeStaticLibraryClass.m */; };
+		59484CBF1F33AFAF00381B6A /* StaticLibraryModelClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 59484CBE1F33AFAF00381B6A /* StaticLibraryModelClass.m */; };
 		59484CC21F33B02B00381B6A /* module.modulemap in CopyFiles */ = {isa = PBXBuildFile; fileRef = 59484CC11F33B02200381B6A /* module.modulemap */; };
-		59484CC31F33B07400381B6A /* SomeStaticLibraryClass.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 59484CBD1F33AFAF00381B6A /* SomeStaticLibraryClass.h */; };
+		59484CC31F33B07400381B6A /* StaticLibraryModelClass.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 59484CBD1F33AFAF00381B6A /* StaticLibraryModelClass.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +54,9 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				59484CC31F33B07400381B6A /* SomeStaticLibraryClass.h in CopyFiles */,
+				592162B71F33CE65006BF5C2 /* StaticLibraryModule.h in CopyFiles */,
+				592162B51F33C0DC006BF5C2 /* StaticLibraryNetworkingClass.h in CopyFiles */,
+				59484CC31F33B07400381B6A /* StaticLibraryModelClass.h in CopyFiles */,
 				59484CC21F33B02B00381B6A /* module.modulemap in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -59,6 +64,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		592162B21F33BF5E006BF5C2 /* StaticLibraryNetworkingClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StaticLibraryNetworkingClass.h; sourceTree = "<group>"; };
+		592162B31F33BF5E006BF5C2 /* StaticLibraryNetworkingClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StaticLibraryNetworkingClass.m; sourceTree = "<group>"; };
+		592162B61F33CE5A006BF5C2 /* StaticLibraryModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StaticLibraryModule.h; sourceTree = "<group>"; };
 		59484C711F33A5EE00381B6A /* libStaticLibraryModule.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libStaticLibraryModule.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		59484C7F1F33A5F700381B6A /* FrameworkModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FrameworkModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		59484C811F33A5F700381B6A /* FrameworkModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FrameworkModule.h; sourceTree = "<group>"; };
@@ -79,8 +87,8 @@
 		59484CB11F33AE5800381B6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		59484CB41F33AE5800381B6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		59484CB61F33AE5800381B6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		59484CBD1F33AFAF00381B6A /* SomeStaticLibraryClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SomeStaticLibraryClass.h; sourceTree = "<group>"; };
-		59484CBE1F33AFAF00381B6A /* SomeStaticLibraryClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SomeStaticLibraryClass.m; sourceTree = "<group>"; };
+		59484CBD1F33AFAF00381B6A /* StaticLibraryModelClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StaticLibraryModelClass.h; sourceTree = "<group>"; };
+		59484CBE1F33AFAF00381B6A /* StaticLibraryModelClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StaticLibraryModelClass.m; sourceTree = "<group>"; };
 		59484CC11F33B02200381B6A /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -143,8 +151,11 @@
 		59484C721F33A5EE00381B6A /* StaticLibraryModule */ = {
 			isa = PBXGroup;
 			children = (
-				59484CBD1F33AFAF00381B6A /* SomeStaticLibraryClass.h */,
-				59484CBE1F33AFAF00381B6A /* SomeStaticLibraryClass.m */,
+				592162B61F33CE5A006BF5C2 /* StaticLibraryModule.h */,
+				59484CBD1F33AFAF00381B6A /* StaticLibraryModelClass.h */,
+				59484CBE1F33AFAF00381B6A /* StaticLibraryModelClass.m */,
+				592162B21F33BF5E006BF5C2 /* StaticLibraryNetworkingClass.h */,
+				592162B31F33BF5E006BF5C2 /* StaticLibraryNetworkingClass.m */,
 				59484CC11F33B02200381B6A /* module.modulemap */,
 			);
 			path = StaticLibraryModule;
@@ -355,7 +366,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59484CBF1F33AFAF00381B6A /* SomeStaticLibraryClass.m in Sources */,
+				592162B41F33BF5E006BF5C2 /* StaticLibraryNetworkingClass.m in Sources */,
+				59484CBF1F33AFAF00381B6A /* StaticLibraryModelClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
